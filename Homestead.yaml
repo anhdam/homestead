@@ -79,3 +79,5 @@ databases:
     - rebl
     - vendor
     - stb
+    - bkbvn_web
+    - bkbvn_wp
