@@ -1,0 +1,81 @@
+---
+ip: "192.168.10.10"
+memory: 512
+cpus: 1
+hostname: anhdamdev
+name: anhdamdev
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: C:\AnhDam\project\tttms\api
+      to: /home/vagrant/tongtar/api
+    - map: C:\AnhDam\project\vw
+      to: "/home/vagrant/volkswagen"
+    - map: C:\AnhDam\project\tttms-v2\api
+      to: /home/vagrant/tongtarv2/api
+    - map: C:\AnhDam\project\bookabus_revamp_web\api
+      to: /home/vagrant/bookabus_revamp_web/api
+    - map: C:\AnhDam\project\bookabus_revamp_web\wordpress
+      to: /home/vagrant/bookabus_revamp_web/wordpress
+    - map: C:\AnhDam\project\bookabus_revamp_web\web\dist
+      to: /home/vagrant/bookabus_revamp_web/web/dist
+    - map: C:\AnhDam\project\consultu
+      to: "/home/vagrant/consultu"
+    - map: C:\AnhDam\project\consultu\wordpress
+      to: /home/vagrant/consultu/wordpress
+    - map: C:\AnhDam\project\laravel
+      to: /home/vagrant/laravel
+    - map: C:\AnhDam\project\wp-vi
+      to: /home/vagrant/wp-vi
+    - map: C:\AnhDam\project\apl\apl
+      to: /home/vagrant/apl
+    - map: C:\AnhDam\project\rebl-website\rebl-website
+      to: /home/vagrant/rebl-website
+    - map: C:\AnhDam\project\rms\rms
+      to: /home/vagrant/rms
+sites:
+    - map: homestead.test
+      to: /home/vagrant/tongtar/api/public
+    - map: local.vw
+      to: "/home/vagrant/volkswagen/public"
+    - map: api.tongtarv2
+      to: /home/vagrant/tongtarv2/api/public
+    - map: bookabus.api
+      to: /home/vagrant/bookabus_revamp_web/api/public
+    - map: homestead.dist
+      to: /home/vagrant/bookabus_revamp_web/wordpress
+    - map: book.homestead.dist
+      to: /home/vagrant/bookabus_revamp_web/web/dist
+    - map: local.consultu
+      to: "/home/vagrant/consultu/public"
+    - map: consultu.wp
+      to: /home/vagrant/consultu/wordpress
+    - map: local.laravel
+      to: "/home/vagrant/laravel/public"
+    - map: local.tag
+      to: /home/vagrant/wp-vi
+    - map: local.apl
+      to: /home/vagrant/apl
+    - map: local.rebl
+      to: /home/vagrant/rebl-website
+    - map: stb.local
+      to: /home/vagrant/rms/public
+databases:
+    - tongtar
+    - volkswagen
+    - tongtarv2
+    - bookabus_revamp
+    - bookabus_wp
+    - consultu
+    - consultu_wp
+    - laravel
+    - apl
+    - tuangia
+    - rebl
+    - vendor
+    - stb
