@@ -38,6 +38,8 @@ folders:
       to: /home/vagrant/rebl-website
     - map: C:\AnhDam\project\rms\rms
       to: /home/vagrant/rms
+    - map: C:\AnhDam\project\timen
+      to: /home/vagrant/timen
 sites:
     - map: homestead.test
       to: /home/vagrant/tongtar/api/public
@@ -65,6 +67,8 @@ sites:
       to: /home/vagrant/rebl-website
     - map: stb.local
       to: /home/vagrant/rms/public
+    - map: local.timen
+      to: /home/vagrant/timen
 databases:
     - tongtar
     - volkswagen
@@ -81,3 +85,4 @@ databases:
     - stb
     - bkbvn_web
     - bkbvn_wp
+    - timen
