@@ -43,8 +43,10 @@ folders:
 sites:
     - map: homestead.test
       to: /home/vagrant/tongtar/api/public
+      php: "7.0"
     - map: local.vw
       to: "/home/vagrant/volkswagen/public"
+      php: "7.0"
     - map: api.tongtarv2
       to: /home/vagrant/tongtarv2/api/public
     - map: bookabus.api
@@ -67,8 +69,10 @@ sites:
       to: /home/vagrant/rebl-website
     - map: stb.local
       to: /home/vagrant/rms/public
+      php: "7.1"
     - map: local.timen
       to: /home/vagrant/timen
+      php: "7.0"
 databases:
     - tongtar
     - volkswagen
