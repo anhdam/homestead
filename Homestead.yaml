@@ -40,6 +40,8 @@ folders:
       to: /home/vagrant/rms
     - map: C:\AnhDam\project\timen
       to: /home/vagrant/timen
+    - map: C:\AnhDam\project\blog
+      to: /home/vagrant/blog
 sites:
     - map: homestead.test
       to: /home/vagrant/tongtar/api/public
@@ -73,6 +75,9 @@ sites:
     - map: local.timen
       to: /home/vagrant/timen
       php: "7.0"
+    - map: local.blog
+      to: /home/vagrant/blog/public
+      php: "7.0"
 databases:
     - tongtar
     - volkswagen
@@ -90,3 +95,4 @@ databases:
     - bkbvn_web
     - bkbvn_wp
     - timen
+    - blog
