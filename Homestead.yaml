@@ -1,6 +1,6 @@
 ---
 ip: "192.168.10.10"
-memory: 512
+memory: 1024
 cpus: 1
 hostname: anhdamdev
 name: anhdamdev
@@ -42,6 +42,10 @@ folders:
       to: /home/vagrant/timen
     - map: C:\AnhDam\project\blog
       to: /home/vagrant/blog
+    - map: C:\AnhDam\project\bookabus_sg\bookabus_revamp_web\api
+      to: /home/vagrant/bookabus_sg/bookabus_revamp_web/api
+    - map: C:\AnhDam\project\bookabus_sg\bookabus_revamp_web\wordpress
+      to: /home/vagrant/bookabus_sg/bookabus_revamp_web/wordpress
 sites:
     - map: homestead.test
       to: /home/vagrant/tongtar/api/public
@@ -53,10 +57,12 @@ sites:
       to: /home/vagrant/tongtarv2/api/public
     - map: bookabus.api
       to: /home/vagrant/bookabus_revamp_web/api/public
+      php: "7.0"
     - map: homestead.dist
       to: /home/vagrant/bookabus_revamp_web/wordpress
     - map: book.homestead.dist
       to: /home/vagrant/bookabus_revamp_web/web/dist
+      php: "7.0"
     - map: local.consultu
       to: "/home/vagrant/consultu/public"
     - map: consultu.wp
@@ -77,6 +83,11 @@ sites:
       php: "7.0"
     - map: local.blog
       to: /home/vagrant/blog/public
+      php: "7.0"
+    - map: bookabussg.api
+      to: /home/vagrant/bookabus_sg/bookabus_revamp_web/api/public
+    - map: bookabussg.dist
+      to: /home/vagrant/bookabus_sg/bookabus_revamp_web/wordpress
       php: "7.0"
 databases:
     - tongtar
